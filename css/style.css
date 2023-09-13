@@ -27,7 +27,7 @@ body {
 }
 
 .header {
-  background-image: url("../img/background/header-background.png");
+  background-image: url("../img/background/header-background.webp");
   width: 100%;
   min-height: 40rem;
   color: #fff;
@@ -37,8 +37,8 @@ body {
   display: flex;
   width: 100%;
   height: 6.25rem;
-  background-image: url("../img/background/nav-back.png"),
-    url("../img/background/nav-back2.png");
+  background-image: url("../img/background/nav-back.webp"),
+    url("../img/background/nav-back2.webp");
   border-bottom: 0.1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -509,30 +509,30 @@ span.swiper-pagination-bullet {
 }
 
 .button-v2 {
-  background: url("../img/background/btn-v2.png");
+  background: url("../img/background/btn-v2.webp");
 }
 
 .button2-v2 {
-  background: url("../img/background/btn2-v2.png");
+  background: url("../img/background/btn2-v2.webp");
 }
 
 .button-v2:hover {
-  background: url("../img/background/btn-v2-hover.png");
+  background: url("../img/background/btn-v2-hover.webp");
 }
 
 .button2-v2:hover {
-  background: url("../img/background/btn2-v2-hover.png");
+  background: url("../img/background/btn2-v2-hover.webp");
 }
 
 .button-simple-v2 {
   max-width: 16.875rem;
   height: 3.75rem;
   width: 100%;
-  background: url("../img/background/btn-simple-v2.png");
+  background: url("../img/background/btn-simple-v2.webp");
 }
 
 .button-simple-v2:hover {
-  background: url("../img/background/btn-simple-v2-hover.png");
+  background: url("../img/background/btn-simple-v2-hover.webp");
 }
 
 button {
@@ -683,13 +683,13 @@ button {
   }
 
   .button-v2 {
-    background: url("../img/background/btn-v2-small.png") no-repeat;
+    background: url("../img/background/btn-v2-small.webp") no-repeat;
     width: 10.925rem;
     height: 2.613rem;
   }
 
   .button-v2:hover {
-    background: url("../img/background/btn-v2-hover-small.png") no-repeat;
+    background: url("../img/background/btn-v2-hover-small.webp") no-repeat;
     width: 10.925rem;
     height: 2.613rem;
   }
