@@ -319,11 +319,9 @@ p {
 }
 
 .swiper-slide {
-  /* max-height: 26.875rem; */
   max-width: 35.625rem;
   background-position: center;
   background-size: cover;
-  /* align-self: center; */
 }
 
 .swiper-slide img {
@@ -602,13 +600,8 @@ button {
     max-width: 100%;
   }
 
-  /* .container_sm {
-    max-width: 100%;
-  } */
-
   .section-2 .container {
     gap: 2.5rem;
-    /* flex-wrap: nowrap; */
   }
 
   .section-2 .ml-sm {
@@ -706,14 +699,8 @@ button {
   }
 
   .bullets_text-container {
-    /* font-size: 10px;
-    font-weight: 400; */
     max-width: 5.313rem;
   }
-  /* {
-    max-width: 5.313rem;
-    font-size: 0.625rem;
-  } */
 
   .bullet_small {
     max-width: 1.25rem;
@@ -733,7 +720,6 @@ button {
 
   .slider {
     height: auto;
-    /* background: url("../img/background/back-mob-2.svg") no-repeat; */
     background-size: cover;
     margin-top: 1rem;
     padding: 8.75rem 0 2.625rem;
@@ -752,7 +738,6 @@ button {
   .swiper {
     height: auto;
     max-width: 55%;
-    /* width: 100%; */
     margin: 0 auto;
     scale: 1;
   }
@@ -789,11 +774,6 @@ button {
     align-items: flex-start;
   }
 
-  /* .main-heading,
-  .sub-heading {
-    align-self: start;
-  } */
-
   .rhombus {
     display: none;
   }
@@ -810,7 +790,6 @@ button {
   .text-container {
     font-size: 14px;
     font-weight: 400;
-    /* align-self: flex-start; */
   }
 
   .rhombus__container {
