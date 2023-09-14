@@ -28,7 +28,6 @@ currentSlide.innerHTML = swiper.activeIndex + 1;
 writeCurrentSlide = () => {
     let number = swiper.activeIndex;
     currentSlide.innerHTML = number + 1;
-    console.log(number);
 }
 
 swiper.on("transitionEnd", writeCurrentSlide);

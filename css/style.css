@@ -505,7 +505,7 @@ span.swiper-pagination-bullet {
   color: #fff;
   font-family: Drugs, serif;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  transition: all 0.5s ease-out;
+  /* transition: all 0.5s ease-out; */
 }
 
 .button-v2 {
