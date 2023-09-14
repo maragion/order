@@ -181,7 +181,7 @@ body::after {
     line-height: normal;
 }
 
-p {
+.p {
     color: #353535;
     font-style: normal;
     font-weight: 250;
@@ -199,6 +199,10 @@ p {
 
 .bullet_medium {
     max-width: 1.813rem;
+}
+
+.central-bullet-text {
+    margin-left: -4px;
 }
 
 .h-line {
@@ -540,6 +544,9 @@ span.swiper-pagination-bullet {
 .button2-v2 {
     background: url("../img/background/btn2-v2.webp");
 }
+.steps .button2-v2 {
+    background: url("../img/background/btn2-v2-steps-section.webp");
+}
 
 .button-v2:hover {
     background: url("../img/background/btn-v2-hover.webp");
@@ -559,6 +566,8 @@ span.swiper-pagination-bullet {
 .button-simple-v2:hover {
     background: url("../img/background/btn-simple-v2-hover.webp");
 }
+
+
 
 button {
     border: none;
@@ -696,21 +705,6 @@ button {
         text-align: left;
     }
 
-    /* .logo {
-      width: 6.813rem;
-    } */
-    .button-v2 {
-        background: url("../img/background/btn-v2-small.webp") no-repeat;
-        width: 10.925rem;
-        height: 2.613rem;
-    }
-
-    .button-v2:hover {
-        background: url("../img/background/btn-v2-hover-small.webp") no-repeat;
-        width: 10.925rem;
-        height: 2.613rem;
-    }
-
     .bullets_text-container {
         max-width: 5.313rem;
     }
@@ -816,6 +810,7 @@ button {
         gap: 0.61rem;
         max-width: max-content;
         flex-wrap: nowrap;
+        align-items: center;
     }
 
     .bullets_text-container {
@@ -968,5 +963,17 @@ button {
 
     .slider {
         padding-top: 7.125rem;
+    }
+
+    .button-v2 {
+        background: url("../img/background/btn-v2-small.webp") no-repeat;
+        width: 10.925rem;
+        height: 2.613rem;
+    }
+
+    .button-v2:hover {
+        background: url("../img/background/btn-v2-hover-small.webp") no-repeat;
+        width: 10.925rem;
+        height: 2.613rem;
     }
 }
