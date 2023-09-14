@@ -19,6 +19,18 @@ body {
   font-family: Drugs, serif;
 }
 
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(../img/background/btn-simple-v2-hover.webp)
+    url(../img/background/btn-v2-hover-small.webp)
+    url(../img/background/btn-v2-hover.webp)
+    url(../img/background/btn2-v2-hover.webp);
+}
+
 .header,
 .navbar {
   background-position: center;
@@ -760,7 +772,7 @@ button {
     align-items: flex-start;
   }
 
-  .footer .container  {
+  .footer .container {
     justify-content: flex-start;
   }
 
@@ -950,7 +962,6 @@ button {
   .steps__button {
     margin-top: 0;
   }
-
 }
 
 @media (max-width: 425px) {
