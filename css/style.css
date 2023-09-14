@@ -127,6 +127,11 @@ body::after {
   margin-left: 24%;
 }
 
+.logo {
+  width: 10.75rem;
+  height: 4rem;
+}
+
 .text-container {
   max-width: 19rem;
 }
@@ -250,8 +255,16 @@ p {
 
 .slider__button-prev,
 .slider__button-next {
-  scale: 2;
+  scale: 1.54;
   position: absolute;
+}
+
+.slider__button-prev {
+  margin-left: 70px;
+}
+
+.slider__button-next {
+  margin-right: 70px;
 }
 
 .slider__button-prev path,
@@ -439,6 +452,7 @@ span.swiper-pagination-bullet {
 }
 
 .plus {
+  display: block;
   position: relative;
   height: 1rem;
   width: 1rem;
@@ -561,10 +575,6 @@ button {
   .polygon-img-large {
     scale: 0.6;
     margin-top: -7.5rem;
-  }
-
-  .swiper {
-    scale: 0.8;
   }
 
   .bullet-container {
