@@ -518,6 +518,10 @@ span.swiper-pagination-bullet {
     display: none;
 }
 
+.icon {
+    align-self: flex-start;
+}
+
 /*Buttons*/
 
 .button-v2,
@@ -838,7 +842,6 @@ button {
     .icon {
         width: 2.063rem;
         height: 3.25rem;
-        align-self: flex-start;
     }
 
     .steps {
