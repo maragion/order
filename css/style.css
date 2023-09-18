@@ -17,6 +17,7 @@ body {
 
 body {
   font-family: Drugs, serif;
+
 }
 
 body::after {
@@ -147,6 +148,10 @@ body::after {
   align-self: flex-start;
 }
 
+.rhombus__container {
+    gap: .7rem
+}
+
 .polygon-img {
   position: absolute;
   margin: auto;
@@ -166,6 +171,7 @@ body::after {
 .polygon-img-large {
   width: 22rem;
   height: 35.25rem;
+  margin-top: -.2rem;
 }
 
 .main-heading {
@@ -605,10 +611,31 @@ button {
 
 /*Media queries*/
 
+
+@media (max-width: 1690px) {
+    html {
+        font-size: 12.8px;
+    }
+
+    button {
+        background-size: contain !important;
+    }
+}
+
+
+
 @media (max-width: 1280px) {
   body {
     overflow-x: hidden;
   }
+
+  html {
+    font-size: 16px;
+  }
+
+  button {
+    background-size: contain !important;
+}
 
   .polygon-img-large {
     scale: 0.6;
@@ -974,7 +1001,7 @@ button {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .steps__text-container {
     margin-top: 10px;
   }
