@@ -25,7 +25,7 @@ const swiper = new Swiper('.swiper', {
 
 currentSlide.innerHTML = swiper.activeIndex + 1;
 
-writeCurrentSlide = () => {
+let writeCurrentSlide = () => {
     let number = swiper.activeIndex;
     currentSlide.innerHTML = number + 1;
 }
