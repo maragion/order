@@ -336,12 +336,12 @@ body::after {
 
 .slider__text-button-prev {
   grid-column: 1;
-  margin-right: 1.75rem;
+  margin-right: 110%;
 }
 
 .slider__text-button-next {
   grid-column: 3;
-  margin-left: 1.563rem;
+  margin-left: 110%;
 }
 
 .slider__counter {
@@ -573,33 +573,33 @@ span.swiper-pagination-bullet {
 }
 
 .button-v2 {
-  background: url("../img/background/btn-v2.webp");
+  background: url("../img/background/btn-v2.webp") no-repeat;
 }
 
 .button2-v2 {
-  background: url("../img/background/btn2-v2.webp");
+  background: url("../img/background/btn2-v2.webp") no-repeat;
 }
 .steps .button2-v2 {
-  background: url("../img/background/btn2-v2-steps-section.webp");
+  background: url("../img/background/btn2-v2-steps-section.webp") no-repeat;
 }
 
 .button-v2:hover {
-  background: url("../img/background/btn-v2-hover.webp");
+  background: url("../img/background/btn-v2-hover.webp") no-repeat;
 }
 
 .button2-v2:hover {
-  background: url("../img/background/btn2-v2-hover.webp");
+  background: url("../img/background/btn2-v2-hover.webp") no-repeat;
 }
 
 .button-simple-v2 {
   max-width: 16.875rem;
   height: 3.75rem;
   width: 100%;
-  background: url("../img/background/btn-simple-v2.webp");
+  background: url("../img/background/btn-simple-v2.webp") no-repeat;
 }
 
 .button-simple-v2:hover {
-  background: url("../img/background/btn-simple-v2-hover.webp");
+  background: url("../img/background/btn-simple-v2-hover.webp") no-repeat;
 }
 
 button {
@@ -619,6 +619,12 @@ button {
 
     button {
         background-size: contain !important;
+        background: no-repeat;
+
+    }
+    
+    .text-container {
+        max-width: 100%;
     }
 }
 
@@ -627,6 +633,10 @@ button {
 @media (max-width: 1280px) {
   body {
     overflow-x: hidden;
+  }
+
+  button {
+    background: no-repeat;
   }
 
   html {
