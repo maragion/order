@@ -17,7 +17,6 @@ body {
 
 body {
   font-family: Drugs, serif;
-
 }
 
 body::after {
@@ -32,13 +31,11 @@ body::after {
     url(../img/background/btn2-v2-hover.webp);
 }
 
-
-
 .header {
   background-image: url("../img/background/header-background.webp");
   width: 100%;
   min-height: 35rem;
-  color: #fff;  
+  color: #fff;
   padding-bottom: 4.5rem;
 }
 
@@ -56,7 +53,6 @@ body::after {
   background-image: url("../img/background/nav-back.webp"),
     url("../img/background/nav-back2.webp");
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
-
 }
 
 .wrapper,
@@ -153,7 +149,7 @@ body::after {
 }
 
 .rhombus__container {
-    gap: .7rem
+  gap: 0.7rem;
 }
 
 .polygon-img {
@@ -168,14 +164,14 @@ body::after {
 }
 
 .button-icon {
-    height: 1.25rem;
-    width: 1.25rem;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
 .polygon-img-large {
   width: 22rem;
   height: 35.25rem;
-  margin-top: -.2rem;
+  margin-top: -0.2rem;
 }
 
 .main-heading {
@@ -215,8 +211,8 @@ body::after {
   gap: 1.25rem;
 }
 .bullets_text-container {
-    align-self: flex-end;
-    font-size: 18px;
+  align-self: flex-end;
+  font-size: 18px;
 }
 
 .bullet_small {
@@ -232,7 +228,7 @@ body::after {
 }
 
 .bullet-container {
-    gap: .7rem;
+  gap: 0.7rem;
 }
 
 .h-line {
@@ -250,7 +246,7 @@ body::after {
 }
 
 .slider .container_sm {
-  min-width: 23.125rem;;
+  min-width: 23.125rem;
   line-height: normal;
   letter-spacing: 0;
 }
@@ -470,7 +466,7 @@ span.swiper-pagination-bullet {
   transition: 0.4s;
   color: #fff;
   font-family: Drugs;
-  font-size: 1.125rem;  
+  font-size: 1.125rem;
   display: flex;
   justify-content: space-between;
   height: 5rem;
@@ -637,24 +633,20 @@ button {
 
 /*Media queries*/
 
-
 @media (max-width: 1690px) {
-    html {
-        font-size: 12.8px;
-    }
+  html {
+    font-size: 12.8px;
+  }
 
-    button {
-        background-size: contain !important;
-        background: no-repeat;
+  button {
+    background-size: contain !important;
+    background: no-repeat;
+  }
 
-    }
-    
-    .text-container {
-        max-width: 100%;
-    }
+  .text-container {
+    max-width: 100%;
+  }
 }
-
-
 
 @media (max-width: 1280px) {
   body {
@@ -671,7 +663,7 @@ button {
 
   button {
     background-size: contain !important;
-}
+  }
 
   .polygon-img-large {
     scale: 0.6;
@@ -684,6 +676,15 @@ button {
 
   .step {
     align-self: center;
+  }
+}
+
+@media (max-width: 1207px) {
+  .steps-container, .dots .dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -1076,6 +1077,6 @@ button {
   }
 
   .slider .container_sm {
-    min-width:18.75rem;
+    min-width: 18.75rem;
   }
 }
