@@ -34,9 +34,11 @@ body::after {
 .header {
   background-image: url("../img/background/header-background.webp");
   width: 100%;
-  min-height: 35rem;
+  max-height: 38rem;
+  height: 100%;
   color: #fff;
-  padding-bottom: 4.5rem;
+  padding-bottom: 4.8rem;
+
 }
 
 .header,
@@ -635,6 +637,11 @@ button {
   display: none;
 }
 
+.steps button {
+  align-self: flex-start;
+  margin-top: 2.56rem;
+}
+
 /*Media queries*/
 
 @media (max-width: 1690px) {
@@ -697,11 +704,17 @@ button {
 
   .slider-steps {
     display: flex;
+    margin-top: 1.8rem;
+  }
+
+  .swiper2 {
+    max-width: max-content;
   }
 
   .swiper-wrapper2 {
         width: 23.125rem;
     height: 21.625rem;
+    
   }
 
   .step-slide {
@@ -717,13 +730,63 @@ button {
 
   .steps-slider-controls {
     width: fit-content;
+    display: flex;
     color: #353535;
+    justify-content: center;
+    align-items: center;
     align-self: center;
+    gap: .5rem;
   }
+
+  .swiper-button-prev2,
+  .swiper-button-next2 {
+  align-self: center;
+  margin-top: .3rem;
+  }
+
+
+  .swiper-button-prev2 path,
+  .swiper-button-next2 path {
+  fill: #666666;
+  /* opacity: 0.5; */
+  /* position: absolute; */
+  scale: 1;
+}
+
+.swiper-button-prev2:hover path,
+.swiper-button-next2:hover path {
+  fill: #858585;
+} 
+
+.swiper-button-prev2.swiper-button-disabled, .swiper-button-next2.swiper-button-disabled {
+  opacity: .5;
+}
+
+.swiper-button-prev2:hover.swiper-button-disabled path, .swiper-button-next2:hover.swiper-button-disabled path{
+  fill: #666666;
+}
+
+.slider__counter2 {
+    color: #353535;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.steps button {
+  align-self: flex-start;
+}
+
+  
 
   /* .slider__button-next2, .slider__button-prev2 {
     
   } */
+}
+
+@media (max-width: 1150px) {
+  .slider__button-next, .slider__button-prev {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -900,6 +963,18 @@ button {
   .h3 {
     align-self: flex-start;
   }
+
+  .steps-container {
+    display: none;
+  }
+
+  .swiper2 {
+    max-width: max-content;
+  }
+
+  .slider button {
+    align-self: flex-start;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1034,7 +1109,7 @@ button {
     text-align: left;
   }
 
-  p {
+  .p {
     font-size: 0.75rem;
   }
 
@@ -1081,6 +1156,22 @@ button {
 
   .steps__button {
     margin-top: 0;
+  }
+
+  .steps button {
+    margin-top: 1.25rem;
+  }
+
+
+}
+
+@media (max-width: 639px) {
+  .slider-steps {
+    display: none;
+  }
+
+  .steps-container {
+    display: flex;
   }
 }
 

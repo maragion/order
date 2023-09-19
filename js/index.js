@@ -3,7 +3,16 @@ let slidesCount = slides.childElementCount;
 let maxSlides = document.getElementById('maxSlides');
 let currentSlide = document.getElementById('currentSlide');
 
+
+let stepSlidesContainer = document.getElementById("slides-step");
+let stepSlidesCount = stepSlidesContainer.childElementCount;
+
+let stepSlides = document.getElementById("stepSlides")
+
+let currentStepsSlide = document.getElementById("stepSlide")
+
 maxSlides.innerHTML = slidesCount;
+stepSlides.innerHTML = stepSlidesCount
 
 
 // Swiper
@@ -62,13 +71,15 @@ const swiper2 = new Swiper('.swiper2', {
   direction: 'horizontal',
   spaceBetween: 20,
 
-  pagination: {
-      el: '.swiper-custom-pagination',
-      clickable: true,
-  },
-
   navigation: {
       nextEl: '.swiper-button-next2',
       prevEl: '.swiper-button-prev2',
   }
 });
+
+let writeCurrentStepsSlide = () => {
+  let number = swiper2.activeIndex;
+  currentStepsSlide.innerHTML = number + 1;
+}
+
+swiper2.on("transitionEnd", writeCurrentStepsSlide)
