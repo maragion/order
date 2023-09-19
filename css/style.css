@@ -37,7 +37,7 @@ body::after {
 .header {
   background-image: url("../img/background/header-background.webp");
   width: 100%;
-  min-height: 40rem;
+  min-height: 35rem;
   color: #fff;  
   padding-bottom: 4.5rem;
 }
@@ -295,7 +295,7 @@ body::after {
 }
 
 .gap-large {
-  gap: 5rem;
+  gap: 6.5rem;
 }
 
 .slider__button-prev,
@@ -1063,5 +1063,9 @@ button {
     background: url("../img/background/btn-v2-hover-small.webp") no-repeat;
     width: 10.925rem;
     height: 2.613rem;
+  }
+
+  .slider .container_sm {
+    min-width:18.75rem;
   }
 }
