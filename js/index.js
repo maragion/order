@@ -8,7 +8,7 @@ maxSlides.innerHTML = slidesCount;
 
 // Swiper
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper1', {
     direction: 'horizontal',
     spaceBetween: 20,
 
@@ -52,3 +52,23 @@ for (let i = 0; i < acc.length; i++) {
   });
 }
 
+
+
+
+
+// Second Swiper
+
+const swiper2 = new Swiper('.swiper2', {
+  direction: 'horizontal',
+  spaceBetween: 20,
+
+  pagination: {
+      el: '.swiper-custom-pagination',
+      clickable: true,
+  },
+
+  navigation: {
+      nextEl: '.swiper-button-next2',
+      prevEl: '.swiper-button-prev2',
+  }
+});
