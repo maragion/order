@@ -32,6 +32,16 @@ body::after {
     url(../img/background/btn2-v2-hover.webp);
 }
 
+
+
+.header {
+  background-image: url("../img/background/header-background.webp");
+  width: 100%;
+  min-height: 40rem;
+  color: #fff;  
+  padding-bottom: 4.5rem;
+}
+
 .header,
 .navbar {
   background-position: center;
@@ -39,20 +49,14 @@ body::after {
   background-size: cover;
 }
 
-.header {
-  background-image: url("../img/background/header-background.webp");
-  width: 100%;
-  min-height: 40rem;
-  color: #fff;
-}
-
 .navbar {
   display: flex;
   width: 100%;
-  height: 6.25rem;
+  min-height: 6.25rem;
   background-image: url("../img/background/nav-back.webp"),
     url("../img/background/nav-back2.webp");
-  border-bottom: 0.1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
+
 }
 
 .wrapper,
@@ -117,7 +121,7 @@ body::after {
 }
 
 .mt-large {
-  margin-top: 5rem;
+  margin-top: 3.8rem;
 }
 
 .ml-sm {
@@ -240,8 +244,13 @@ body::after {
   height: fit-content;
   margin-top: 4.875rem;
   background: url("../img/background/slider-back.svg") no-repeat center;
+  background-size: cover;
   padding: 8.188rem 0;
   color: #fff;
+}
+
+.slider .container_sm {
+  min-width: 22rem;
 }
 
 .headers-h-line {
@@ -336,12 +345,12 @@ body::after {
 
 .slider__text-button-prev {
   grid-column: 1;
-  margin-right: 110%;
+  margin-right: 120%;
 }
 
 .slider__text-button-next {
   grid-column: 3;
-  margin-left: 110%;
+  margin-left: 120%;
 }
 
 .slider__counter {
@@ -432,8 +441,7 @@ span.swiper-pagination-bullet {
 }
 
 .accordions {
-  max-width: 120rem;
-  flex-shrink: 0;
+  max-width: 100%;
   background: rgba(0, 0, 0, 0.4);
   padding-top: 6.25rem;
   padding-bottom: 5.44rem;
@@ -452,14 +460,17 @@ span.swiper-pagination-bullet {
   transition: 0.4s;
   color: #fff;
   font-family: Drugs;
-  font-size: 1.125rem;
-
+  font-size: 1.125rem;  
   display: flex;
   justify-content: space-between;
   height: 5rem;
   padding: 2rem 1.875rem;
   box-sizing: border-box;
   width: 100%;
+}
+
+.accordion:not(:first-child) {
+  margin-top: -1.125rem;
 }
 
 .accordion:hover {
@@ -481,6 +492,10 @@ span.swiper-pagination-bullet {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.mt-b-panel-bottom {
+  margin-bottom: 1.125rem;
 }
 
 .panel p {
@@ -946,6 +961,14 @@ button {
   .panel-content {
     padding: 0.62rem 0 4.13rem;
     color: #fff;
+  }
+
+  .panel {
+    margin-bottom: 0 !important;
+  }
+
+  .accordion:not(:first-child) {
+    margin-top: 0;
   }
 
   .footer {
